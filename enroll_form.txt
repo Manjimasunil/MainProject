@@ -1,0 +1,29 @@
+<?php
+include "../config/db.php";
+$fid = $_GET['fid'];
+?>
+
+<form action="../api/enroll_save.php" method="post">
+Finger ID <input name="finger_id" value="<?= $fid ?>" readonly><br>
+Register No <input name="register_no"><br>
+Name <input name="name"><br>
+
+<select name="department">
+<option>BCA</option><option>MCA</option>
+<option>BTECH</option><option>MTECH</option>
+</select><br>
+
+Semester <input name="semester"><br>
+Contact <input name="contact"><br>
+
+Father Name <input name="father_name"><br>
+Father Contact <input name="father_contact"><br>
+
+Mother Name <input name="mother_name"><br>
+Mother Contact <input name="mother_contact"><br>
+
+Total Fee <input name="total_fee"><br>
+Paid Fee <input name="paid_fee"><br>
+
+<button>Save</button>
+</form>
